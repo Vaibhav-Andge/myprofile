@@ -17,7 +17,9 @@ body {
     display: flex;
     gap: 20px;
     animation: fadeIn 1s ease-in-out;
+    flex-wrap: wrap;
 }
+
 .container {
     display: flex;
     flex-direction: row;
@@ -151,6 +153,21 @@ h2::after {
     color: var(--accent);
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .left-column {
+        width: 40%;
+    }
+
+    .right-column {
+        width: 60%;
+    }
+
+    .header-name {
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         flex-direction: column;
@@ -159,6 +176,47 @@ h2::after {
     .left-column,
     .right-column {
         width: 100%;
+    }
+
+    .profile-image {
+        height: 200px;
+    }
+
+    .profile-image img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .header-name {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .header-name {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .skill-chip {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .profile-image {
+        height: 150px;
+    }
+
+    .profile-image img {
+        height: 8rem;
+        width: 8rem;
     }
 }
 
