@@ -4,147 +4,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaibhav Andge - Resume</title>
+    <title>Vaibhav Andge - Professional Resume</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   <link href="./main.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --background: #f8f9fa;
+            --card-bg: #ffffff;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: var(--background);
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .left-column {
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .profile-image img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 15px;
+            transition: transform 0.5s ease;
+        }
+
+        .profile-image:hover img {
+            transform: scale(1.1);
+        }
+
+        .header-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .header-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            background: var(--card-bg);
+            box-shadow: 0 2px 4px var(--shadow);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .skill-chip {
+            display: inline-block;
+            padding: 8px 15px;
+            margin: 5px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            .header-name {
+                font-size: 2rem;
+            }
+
+            .profile-image img {
+                height: 120px;
+                width: 120px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-            <!-- Left Column -->
+    <!-- Left Column -->
     <div class="left-column">
         <div class="profile-image">
             <img src="./profile.jpeg" alt="Profile Image">
         </div>
-        <div class="section">
-            <h2>📞 Contact</h2>
-            <div class="contact-info">
-                📍 Pune, India 411036<br>
-                📧 <a href="mailto:vaibhav.andge@gmail.com">vaibhav.andge@gmail.com</a><br>
-                📱 <a href="tel:+919405687783">9405687783</a>
-            </div>
-        </div>
-        <div class="section">
-            <h2>🚀 Skills</h2>
-            <div class="skills-container">
-                <div class="skill-chip">Micro Front-End</div>
-                <div class="skill-chip">React & Redux</div>
-                <div class="skill-chip">Node.js</div>
-                <div class="skill-chip">Vue & Vue-Leaflet</div>
-                <div class="skill-chip">Angular 17 + NgRx</div>
-                <div class="skill-chip">Azure Maps</div>
-                <div class="skill-chip">D3.js</div>
-                <div class="skill-chip">TypeScript</div>
-                <div class="skill-chip">JavaScript</div>
-                <div class="skill-chip">HTML5</div>
-                <div class="skill-chip">CSS3</div>
-                <div class="skill-chip">Bootstrap</div>
-                <div class="skill-chip">Angular Material</div>
-                <div class="skill-chip">Framework Migrations</div>
-            </div>
-        </div>
-        <div class="section">
-            <h2>🎓 Education</h2>
-            <h3>Shree Sant Gajanan Maharaj College of Engineering</h3>
-            <p>Bachelor of Engineering in Electronics and Telecommunication (Graduated: May 2015)</p>
+        <div class="header-name">Vaibhav Andge</div>
+        <div class="header-title">Senior Front-End Developer</div>
+        <div class="contact-info">
+            📍 Pune, India<br>
+            📧 <a href="mailto:vaibhav.andge@gmail.com">vaibhav.andge@gmail.com</a><br>
+            📱 <a href="tel:+919405687783">+91 9405687783</a>
         </div>
     </div>
-    <!-- Right Column -->
-    <div class="right-column">
-        <div class="section">
-            <div class="header-name">Vaibhav Andge</div>
-            <p>Senior Front-End Developer</p>
-        </div>
-        <div class="section">
-            <h2>📋 Summary</h2>
-            <p>
-                A focused and detail-oriented Front-End Developer with 8+ years of experience in technologies like
-                HTML5, CSS3, JavaScript, Angular, React, Vue, Azure Maps control, D3 chart library, NgRx, RXJS, DOM
-                manipulation techniques, and Micro Front-End using Single-SPA, Module Federation, and Web Components in
-                Banking, Financial Services, and Assurance domains.
-            </p>
-        </div>
-        <div class="section">
-            <h2>💻 Professional Experience</h2>
-            <div class="stepper">
-            <div class="step">
-                <div class="step-header">
-                <h3>Senior Software Engineer @ Globant</h3>
-                <p>Jul 2021 - Present | Pune, India | Client: E&Y</p>
-                </div>
-                <div class="step-content">
-                <ul>
-                    <li>Developed EY Virtual app to optimize workflows and enhance process efficiency by identifying and analyzing flaws.</li>
-                    <li>Built EY CAP project to identify risks like Physical Risk and Transition Risk, integrating Azure Maps for asset management with features like markers and tooltips.</li>
-                    <li>Led a team of 4+ frontend developers, provided technical guidance, and conducted sessions on Micro Front-End, PWA, and other modern technologies.</li>
-                    <li>Proactively developed a Chrome extension using React for language translation, allowing users to translate selected text on webpages.</li>
-                </ul>
-                </div>
-            </div>
-            <div class="step">
-                <div class="step-header">
-                <h3>IT Analyst @ TCS</h3>
-                <p>Jan 2020 - Jul 2021 | Pune, India | Client: Vanguard</p>
-                </div>
-                <div class="step-content">
-                <ul>
-                    <li>Developed a 3-page Health Care Cost Estimator application to capture user inputs, make API calls, and display healthcare cost data.</li>
-                </ul>
-                </div>
-            </div>
-            <div class="step">
-                <div class="step-header">
-                <h3>Assistant System Engineer @ TCS</h3>
-                <p>Jan 2016 - Jan 2020 | Pune, India | Clients: Vanguard & TD Bank Canada</p>
-                </div>
-                <div class="step-content">
-                <ul>
-                    <li>Developed forms, pop-ups, and user input features for financial sites using Angular to capture investor data and support advisory processes.</li>
-                    <li>Automated internal onboarding tasks, reducing manual work and improving efficiency.</li>
-                    <li>Created mobile and desktop versions of a term life quote calculator, ensuring accessibility compliance and delivering a seamless user experience.</li>
-                </ul>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="section">
-            <h2>📜 Certifications</h2>
-            <div class="certification-card">
-                <h3>Vue - The Complete Guide</h3>
-                <p>Udemy Certification: <a
-                        href="https://www.udemy.com/certificate/UC-f97abcf4-2d72-490f-89c0-3cc013d61c10/"
-                        target="_blank">View Certificate</a></p>
-            </div>
-        </div>
-        <div class="section">
-            <h2>🏆 Achievements</h2>
-            <div class="certification-card">
-                <h3>⭐ Star of the Month - TCS (May 2020)</h3>
-                <p>Recognized for exceptional contributions to financial site enhancements.</p>
-            </div>
-            <div class="certification-card">
-                <h3>🛠️ On-Spot Award - Globant (Sept 2021)</h3>
-                <p>Developed Chrome extension for language translation.</p>
-            </div>
-            <div class="certification-card">
-                <h3>💡 Vaccination Slot Availability Portal</h3>
-                <p>Created a small portal for getting vaccination slot availability related information and received
-                    appreciation for the same (Voluntary contribution towards society).
-                    <a href="https://vaccinationavailability.blogspot.com/p/real-time-vaccination-slot-availability.html"
-                        target="_blank">View Details</a>
-                </p>
-            </div>
+
+    <!-- Summary Section -->
+    <div class="section">
+        <h2>📋 Summary</h2>
+        <p>
+            A results-driven Front-End Developer with 8+ years of experience in modern web technologies, including
+            Angular, React, Vue, and Micro Front-End architecture. Proven expertise in delivering scalable,
+            user-friendly
+            applications for Banking and Financial domains.
+        </p>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section">
+        <h2>🚀 Skills</h2>
+        <div>
+            <span class="skill-chip">Micro Front-End</span>
+            <span class="skill-chip">React & Redux</span>
+            <span class="skill-chip">Angular</span>
+            <span class="skill-chip">Vue.js</span>
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">D3.js</span>
+            <span class="skill-chip">Azure Maps</span>
+            <span class="skill-chip">HTML5</span>
+            <span class="skill-chip">CSS3</span>
         </div>
     </div>
+
+    <!-- Professional Experience Section -->
+    <div class="section">
+        <h2>💻 Professional Experience</h2>
+        <h3>Senior Software Engineer @ Globant</h3>
+        <p><strong>Jul 2021 - Present | Pune, India</strong></p>
+        <ul>
+            <li>Developed EY Virtual app to optimize workflows and enhance process efficiency.</li>
+            <li>Integrated Azure Maps for asset management in EY CAP project.</li>
+            <li>Led a team of 4+ developers, providing technical guidance and training.</li>
+            <li>Created a Chrome extension for real-time language translation.</li>
+        </ul>
+
+        <h3>IT Analyst @ TCS</h3>
+        <p><strong>Jan 2020 - Jul 2021 | Pune, India</strong></p>
+        <ul>
+            <li>Developed a Health Care Cost Estimator application to streamline user interactions.</li>
+        </ul>
+
+        <h3>Assistant System Engineer @ TCS</h3>
+        <p><strong>Jan 2016 - Jan 2020 | Pune, India</strong></p>
+        <ul>
+            <li>Built investor data capture forms and advisory tools using Angular.</li>
+            <li>Automated onboarding tasks, reducing manual effort significantly.</li>
+        </ul>
     </div>
+
+    <!-- Education Section -->
+    <div class="section">
+        <h2>🎓 Education</h2>
+        <h3>Shree Sant Gajanan Maharaj College of Engineering</h3>
+        <p>Bachelor of Engineering in Electronics and Telecommunication (Graduated: May 2015)</p>
+    </div>
+
+    <!-- Certifications Section -->
+    <div class="section">
+        <h2>📜 Certifications</h2>
+        <ul>
+            <li>Vue - The Complete Guide (Udemy)</li>
+        </ul>
+    </div>
+
+    <!-- Achievements Section -->
+    <div class="section">
+        <h2>🏆 Achievements</h2>
+        <ul>
+            <li>⭐ Star of the Month - TCS (May 2020)</li>
+            <li>🛠️ On-Spot Award - Globant (Sept 2021)</li>
+            <li>💡 Developed a Vaccination Slot Availability Portal (Voluntary Contribution)</li>
+        </ul>
+    </div>
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 800,
             offset: 120,
-            once: false,
+            once: true,
             easing: 'ease-out-quad'
         });
     </script>
