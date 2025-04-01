@@ -6,112 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaibhav Andge - Resume</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #2c3e50;
-            --secondary: #3498db;
-            --accent: #e74c3c;
-        }
-
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #f8f9fa;
-            display: flex;
-            gap: 20px;
-        }
-
-        .left-column {
-            width: 30%;
-            background: skyblue;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .right-column {
-            width: 70%;
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .profile-image {
-            width: 100%;
-            height: 200px;
-            background: #ddd;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            color: #666;
-        }
-
-        .section {
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: var(--accent);
-            margin-bottom: 10px;
-        }
-
-        .skill-chip {
-            display: inline-block;
-            padding: 8px 15px;
-            margin: 5px 0;
-            background: #f0f0f0;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            transition: background-color 0.5s ease, transform 0.5s ease, margin 0.5s ease;
-        }
-
-        .skill-chip:hover {
-            background: var(--secondary);
-            color: white;
-            margin: 15px 0;
-            transform: scale(1.1);
-        }
-
-        .timeline-item,
-        .certification-card {
-            margin-bottom: 20px;
-        }
-
-        .header-name {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 10px;
-        }
-
-        .contact-info {
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                flex-direction: column;
-            }
-
-            .left-column,
-            .right-column {
-                width: 100%;
-            }
-        }
-    </style>
+   <link href="./main.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Left Column -->
+    <div class="container">
+            <!-- Left Column -->
     <div class="left-column">
-        <div class="profile-image">Profile Image</div>
+        <div class="profile-image">
+            <img src="./profile.jpeg" alt="Profile Image">
+        </div>
         <div class="section">
             <h2>📞 Contact</h2>
             <div class="contact-info">
@@ -141,11 +46,9 @@
         </div>
         <div class="section">
             <h2>🎓 Education</h2>
-            <div class="certification-card"></div>
             <h3>Shree Sant Gajanan Maharaj College of Engineering</h3>
             <p>Bachelor of Engineering in Electronics and Telecommunication (Graduated: May 2015)</p>
         </div>
-    </div>
     </div>
     <!-- Right Column -->
     <div class="right-column">
@@ -164,31 +67,45 @@
         </div>
         <div class="section">
             <h2>💻 Professional Experience</h2>
-            <div class="timeline-item">
-            <h3>Senior Software Engineer @ Globant</h3>
-            <p>Jul 2021 - Present | Pune, India | Client: E&Y</p>
-            <ul>
-                <li>Developed EY Virtual app to optimize workflows and enhance process efficiency by identifying and analyzing flaws.</li>
-                <li>Built EY CAP project to identify risks like Physical Risk and Transition Risk, integrating Azure Maps for asset management with features like markers and tooltips.</li>
-                <li>Led a team of 4+ frontend developers, provided technical guidance, and conducted sessions on Micro Front-End, PWA, and other modern technologies.</li>
-                <li>Proactively developed a Chrome extension using React for language translation, allowing users to translate selected text on webpages.</li>
-            </ul>
+            <div class="stepper">
+            <div class="step">
+                <div class="step-header">
+                <h3>Senior Software Engineer @ Globant</h3>
+                <p>Jul 2021 - Present | Pune, India | Client: E&Y</p>
+                </div>
+                <div class="step-content">
+                <ul>
+                    <li>Developed EY Virtual app to optimize workflows and enhance process efficiency by identifying and analyzing flaws.</li>
+                    <li>Built EY CAP project to identify risks like Physical Risk and Transition Risk, integrating Azure Maps for asset management with features like markers and tooltips.</li>
+                    <li>Led a team of 4+ frontend developers, provided technical guidance, and conducted sessions on Micro Front-End, PWA, and other modern technologies.</li>
+                    <li>Proactively developed a Chrome extension using React for language translation, allowing users to translate selected text on webpages.</li>
+                </ul>
+                </div>
             </div>
-            <div class="timeline-item">
-            <h3>IT Analyst @ TCS</h3>
-            <p>Jan 2020 - Jul 2021 | Pune, India | Client: Vanguard</p>
-            <ul>
-                <li>Developed a 3-page Health Care Cost Estimator application to capture user inputs, make API calls, and display healthcare cost data.</li>
-            </ul>
+            <div class="step">
+                <div class="step-header">
+                <h3>IT Analyst @ TCS</h3>
+                <p>Jan 2020 - Jul 2021 | Pune, India | Client: Vanguard</p>
+                </div>
+                <div class="step-content">
+                <ul>
+                    <li>Developed a 3-page Health Care Cost Estimator application to capture user inputs, make API calls, and display healthcare cost data.</li>
+                </ul>
+                </div>
             </div>
-            <div class="timeline-item">
-            <h3>Assistant System Engineer @ TCS</h3>
-            <p>Jan 2016 - Jan 2020 | Pune, India | Clients: Vanguard & TD Bank Canada</p>
-            <ul>
-                <li>Developed forms, pop-ups, and user input features for financial sites using Angular to capture investor data and support advisory processes.</li>
-                <li>Automated internal onboarding tasks, reducing manual work and improving efficiency.</li>
-                <li>Created mobile and desktop versions of a term life quote calculator, ensuring accessibility compliance and delivering a seamless user experience.</li>
-            </ul>
+            <div class="step">
+                <div class="step-header">
+                <h3>Assistant System Engineer @ TCS</h3>
+                <p>Jan 2016 - Jan 2020 | Pune, India | Clients: Vanguard & TD Bank Canada</p>
+                </div>
+                <div class="step-content">
+                <ul>
+                    <li>Developed forms, pop-ups, and user input features for financial sites using Angular to capture investor data and support advisory processes.</li>
+                    <li>Automated internal onboarding tasks, reducing manual work and improving efficiency.</li>
+                    <li>Created mobile and desktop versions of a term life quote calculator, ensuring accessibility compliance and delivering a seamless user experience.</li>
+                </ul>
+                </div>
+            </div>
             </div>
         </div>
         <div class="section">
@@ -212,10 +129,14 @@
             </div>
             <div class="certification-card">
                 <h3>💡 Vaccination Slot Availability Portal</h3>
-                <p>Created a small portal for getting vaccination slot availability related information and received appreciation for the same (Voluntary contribution towards society). 
-                <a href="https://vaccinationavailability.blogspot.com/p/real-time-vaccination-slot-availability.html" target="_blank">View Details</a></p>
+                <p>Created a small portal for getting vaccination slot availability related information and received
+                    appreciation for the same (Voluntary contribution towards society).
+                    <a href="https://vaccinationavailability.blogspot.com/p/real-time-vaccination-slot-availability.html"
+                        target="_blank">View Details</a>
+                </p>
             </div>
         </div>
+    </div>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
