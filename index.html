@@ -35,6 +35,7 @@
             padding: 20px;
             border-radius: 15px;
             text-align: center;
+            margin-bottom: 20px;
         }
 
         .profile-image img {
@@ -96,12 +97,27 @@
             border-radius: 20px;
             font-size: 0.9rem;
             font-weight: 500;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .skill-chip:hover {
+            transform: scale(1.1);
+            background-color: var(--accent);
         }
 
         .contact-info a {
-            color: var(--primary);
+            color: var(--background);
             text-decoration: none;
             font-weight: bold;
+        }
+        .contact-info a:visited {
+            color: var(--background);
+        }
+        .contact-info a:active {
+            color: var(--background);
+        }
+        .contact-info a:focus {
+            color: var(--background);
         }
 
         .contact-info a:hover {
